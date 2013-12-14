@@ -1,12 +1,15 @@
 {
   "name": "MightyCommandPalette",
   "version": "0.0.1",
-  "main": "index.html",
+  "main": "frontend-main.html",
   "window": {
     "frame": false,
     "toolbar": false
   },
   "dependencies": {
+    "CommandPalette-Backend": "FunkMonkey/CommandPalette-Backend"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "grunt-grunt": "~0.2.1"
+  }
 }
