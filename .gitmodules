@@ -1,0 +1,3 @@
+[submodule "node_modules/CommandPalette-Backend"]
+	path = node_modules/CommandPalette-Backend
+	url = git@github.com:FunkMonkey/CommandPalette-Backend.git

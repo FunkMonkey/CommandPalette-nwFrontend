@@ -1,12 +1,12 @@
 {
   "name": "MightyCommandPalette",
   "version": "0.0.1",
-  "main": "index.html",
+  "main": "frontend-main.html",
   "window": {
     "frame": false,
     "toolbar": false
   },
   "dependencies": {
-  },
-  "devDependencies": {}
+    "q": "0.9.7"
+  }
 }

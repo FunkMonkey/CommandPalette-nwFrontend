@@ -1,0 +1,8 @@
+{
+  "name": "CommandPalette-nwFrontend",
+  "version": "0.0.1",
+  "dependencies": {
+    "angular": "~1.2.5"
+  },
+  "devDependencies": {}
+}

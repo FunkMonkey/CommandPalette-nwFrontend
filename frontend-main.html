@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html ng-app="CP">
+  <head>
+    <title>Hello World!</title>
+    <script src="components/angular/angular.js"></script>
+    <script src="lib/frontend-main.js"></script>
+  </head>
+  <body ng-controller="Main">
+    <button value="Test" onclick="doIt();">Test</button>
+    <button value="DevTools" onclick="showDevTools();">DevTools</button>
+    <select ng-model="choice">
+       <option ng-repeat="cmd in commands" value="{{cmd}}">{{cmd}}</option>
+    </select>
+  </body>
+</html>
