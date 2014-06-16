@@ -1,0 +1,20 @@
+<link rel="import" href="../../components/polymer/polymer.html">
+
+<polymer-element name="cp-dropdown" attributes="ctrl value">
+  <template >
+  	<link rel="stylesheet" href="cp-dropdown.css">
+  	
+  	<div on-keydown="{{onKeyDown}}">
+	  	<input class="dropdown-input" type="edit" value="{{value}}"></input>
+			<div id="dropdownList" class="dropdown-list" >
+				<shadow></shadow>
+			</div>
+     </div>
+		</div>
+		
+
+  </template>
+  <script src="cp-dropdown.js"></script>
+</polymer-element>
+
+

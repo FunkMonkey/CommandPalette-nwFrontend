@@ -2,7 +2,8 @@
   "name": "CommandPalette-nwFrontend",
   "version": "0.0.1",
   "dependencies": {
-    "angular": "~1.2.5"
+    "polymer": "Polymer/polymer#~0.1.2",
+    "platform": "Polymer/platform#~0.1.2"
   },
   "devDependencies": {}
 }

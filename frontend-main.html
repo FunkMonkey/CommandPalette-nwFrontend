@@ -1,15 +1,27 @@
 <!DOCTYPE html>
-<html ng-app="CP">
+<html>
   <head>
     <title>Hello World!</title>
-    <script src="components/angular/angular.js"></script>
     <script src="lib/frontend-main.js"></script>
+
+    <!-- 1. Load platform support before any code that touches the DOM. -->
+    <script src="components/platform/platform.js"></script>
+    
+    <!-- 2. Load the component using an HTML Import -->
+    <link rel="import" href="lib/elements/cp-dropdown.html">
+
+    
   </head>
-  <body ng-controller="Main">
-    <button value="Test" onclick="doIt();">Test</button>
-    <button value="DevTools" onclick="showDevTools();">DevTools</button>
-    <select ng-model="choice">
-       <option ng-repeat="cmd in commands" value="{{cmd}}">{{cmd}}</option>
-    </select>
+  <body>
+    <button value="DevTools" onclick="gui.Window.get().showDevTools();">DevTools</button>
+    <template id="frontend-main-body" bind>
+      <button value="Test" onclick="doIt();">Test</button>
+      <button value="DevTools" onclick="showDevTools();">DevTools</button>
+      <cp-dropdown ctrl="{{dropdownCtrl}}">
+        <template>
+          <div>{{item}}</div>
+        </template>
+      </cp-dropdown>
+    </template>
   </body>
 </html>
